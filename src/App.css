@@ -93,3 +93,53 @@
     width: 0%;
     transition: .3s;
 }
+
+.contact {
+    padding: 1em;
+    display: grid;
+    gap: .4em;
+    border-top: 1px solid white;
+    place-content: center;
+
+}
+
+.contact p {
+    border: 2px solid var(--text-secondary);
+    padding: 4px;
+    margin: 0 auto;
+    color: var(--text-secondary);
+    display: flex;
+    align-items: center;
+
+
+}
+
+.contact a {
+    color: white;
+    font-size: 1rem;
+    text-decoration: none;
+    padding: 4px 10px;
+    font-size: 1.1rem;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+
+.contact p a:hover {
+    text-decoration: underline;
+}
+
+.contact>a {
+    text-align: center;
+    border: 1px solid white;
+    display: block;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .4em;
+    letter-spacing: 1.2px;
+}
+
+.contact>a:hover {
+    opacity: .8;
+}
