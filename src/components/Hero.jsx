@@ -1,4 +1,4 @@
-import Rings from "./rings"
+// import Rings from "./rings"
 
 const Hero = () => {
     return (
