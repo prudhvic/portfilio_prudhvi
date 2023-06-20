@@ -254,4 +254,24 @@ h2 strong {
     margin-top: 1.5em;
   }
 
+  .skills {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    margin: 0 auto;
+    width: 100%;
+
+  }
+
+  .links ul li a svg {
+    font-size: 1.5rem;
+  }
+
+  h1 {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width:460px) {
+  .leading-text {
+    font-size: .84ch;
+  }
 }
