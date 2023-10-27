@@ -1,3 +1,7 @@
+import { motion, useAnimation } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+import { useEffect } from "react";
+
 let projects = [
     {
         img: "/assets/fitness-appv1.png",
@@ -37,13 +41,37 @@ let projects = [
 ]
 
 const Projects = () => {
+    const control = useAnimation();
+    const [ref, inView] = useInView();
+    const container = {
+        hidden: { opacity: 0 },
+        visible: {
+            opacity: 1,
+            transition: {
+                staggerChildren: 0.5
+            }
+        }
+    }
+
+    const item = {
+        hidden: { opacity: 0 },
+        visible: { opacity: 1 }
+    }
+    useEffect(() => {
+        if (inView) {
+            control.start("visible");
+        }
+    }, [control, inView]);
     return (
 
         <section className="container">
             <h2>Projects</h2>
-            <div className="projects">
+            <motion.div ref={ref}
+                variants={container}
+                initial="hidden"
+                animate={control} className="projects">
                 {projects.map((project) => (
-                    <div>
+                    <motion.div variants={item} key={project.name}>
                         <div className="img-container">
 
                             <img src={project.img} />
@@ -55,10 +83,10 @@ const Projects = () => {
                         <p>{project.name}</p>
                         <p className="tools">{project.tools.join(" ,  ")}</p>
 
-                    </div>
+                    </motion.div>
                 ))
                 }
-            </div>
+            </motion.div>
 
 
 
