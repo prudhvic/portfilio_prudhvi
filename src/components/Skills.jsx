@@ -31,20 +31,6 @@ const Skills = () => {
             experience: "3"
         },
         {
-            name: "Next.js",
-            experience: "3"
-        },
-        {
-            name: "Node.js",
-            experience: "3"
-        }
-        ,
-        {
-            name: "Express.js",
-            experience: "3"
-        }
-        ,
-        {
             name: "Mongodb",
             experience: "3"
         }

@@ -37,6 +37,29 @@ let projects = [
         tools: ["HTML", "CSS", "JAVASCRIPT", "REACT.JS"],
         link: "https://shopping-cart-lake-rho.vercel.app/",
         code: "https://github.com/prudhvic/shopping_cart"
+    },
+    {
+        img: "/assets/Book-fetcher.png",
+        name: 'Bookfetcher site',
+        tools: ["HTML", "CSS", "JAVASCRIPT"],
+        link: "https://book-fetcher-qxus177xv-sundeeps-projects-02cea431.vercel.app",
+        code: "https://github.com/1sandeep420/Book_fetcher.git"
+    }
+    ,
+    {
+        img: "/assets/Shopping-cart.png",
+        name: 'Bookfetcher site',
+        tools: ["HTML", "CSS", "JAVASCRIPT"],
+        link: "https://shopping-cart-p7tcpmx0f-sundeeps-projects-02cea431.vercel.app",
+        code: "https://github.com/1sandeep420/Shopping_cart.git"
+    }
+    ,
+    {
+        img: "/assets/Password-gen.png",
+        name: 'Bookfetcher site',
+        tools: ["HTML", "CSS", "JAVASCRIPT"],
+        link: "https://password-mg26oq49l-sundeeps-projects-02cea431.vercel.app/",
+        code: "https://github.com/1sandeep420/Password_Gen.git"
     }
 ]
 
