@@ -1,6 +1,4 @@
 import { AiFillGithub, AiFillLinkedin, AiFillTwitterCircle } from "react-icons/ai"
-import { GrResume } from "react-icons/gr"
-
 const Navbar = () => {
     return (
         <header className='navbar'>
